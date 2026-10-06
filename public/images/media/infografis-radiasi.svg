@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="infoGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00d082"/>
+      <stop offset="100%" stop-color="#064e3b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="800" rx="20" fill="url(#infoGrad)"/>
+  
+  <!-- Header -->
+  <rect x="40" y="40" width="520" height="100" rx="16" fill="#ffffff"/>
+  <text x="300" y="80" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="900" fill="#00d082" text-anchor="middle" letter-spacing="1.5">
+    INFOGRAFIS EDUKASI BEM RADIOLOGI
+  </text>
+  <text x="300" y="115" font-family="'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="900" fill="#064e3b" text-anchor="middle">
+    5 Fakta Keselamatan Radiasi Medis
+  </text>
+
+  <!-- Items list -->
+  <!-- Item 1 -->
+  <g transform="translate(40, 160)">
+    <rect width="520" height="90" rx="14" fill="#ffffff" opacity="0.95"/>
+    <circle cx="50" cy="45" r="24" fill="#fef84c"/>
+    <text x="50" y="53" font-family="'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="900" fill="#064e3b" text-anchor="middle">1</text>
+    <text x="95" y="38" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800" fill="#064e3b">Dosis Terkendali &amp; Rasional</text>
+    <text x="95" y="62" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500" fill="#64748b">Pemeriksaan foto Rontgen selalu mengikuti prinsip justifikasi medis.</text>
+  </g>
+
+  <!-- Item 2 -->
+  <g transform="translate(40, 265)">
+    <rect width="520" height="90" rx="14" fill="#ffffff" opacity="0.95"/>
+    <circle cx="50" cy="45" r="24" fill="#fef84c"/>
+    <text x="50" y="53" font-family="'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="900" fill="#064e3b" text-anchor="middle">2</text>
+    <text x="95" y="38" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800" fill="#064e3b">Apron Timbal (Pb) Sebagai Pelindung</text>
+    <text x="95" y="62" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500" fill="#64748b">Organ sensitif dan pendamping pasien terlindungi dengan lead apron.</text>
+  </g>
+
+  <!-- Item 3 -->
+  <g transform="translate(40, 370)">
+    <rect width="520" height="90" rx="14" fill="#ffffff" opacity="0.95"/>
+    <circle cx="50" cy="45" r="24" fill="#fef84c"/>
+    <text x="50" y="53" font-family="'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="900" fill="#064e3b" text-anchor="middle">3</text>
+    <text x="95" y="38" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800" fill="#064e3b">Prinsip Waktu, Jarak, Perisai</text>
+    <text x="95" y="62" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500" fill="#64748b">Radiografer profesional terlatih meminimalkan paparan radiasi.</text>
+  </g>
+
+  <!-- Item 4 -->
+  <g transform="translate(40, 475)">
+    <rect width="520" height="90" rx="14" fill="#ffffff" opacity="0.95"/>
+    <circle cx="50" cy="45" r="24" fill="#fef84c"/>
+    <text x="50" y="53" font-family="'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="900" fill="#064e3b" text-anchor="middle">4</text>
+    <text x="95" y="38" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800" fill="#064e3b">Modalitas Digital Semakin Rendah Dosis</text>
+    <text x="95" y="62" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500" fill="#64748b">Teknologi DR (Digital Radiography) memangkas paparan hingga 60%.</text>
+  </g>
+
+  <!-- Item 5 -->
+  <g transform="translate(40, 580)">
+    <rect width="520" height="90" rx="14" fill="#ffffff" opacity="0.95"/>
+    <circle cx="50" cy="45" r="24" fill="#fef84c"/>
+    <text x="50" y="53" font-family="'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="900" fill="#064e3b" text-anchor="middle">5</text>
+    <text x="95" y="38" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800" fill="#064e3b">Manfaat Diagnostik Jauh Lebih Besar</text>
+    <text x="95" y="62" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500" fill="#64748b">Pemeriksaan radiologi menyelamatkan nyawa lewat deteksi dini akurat.</text>
+  </g>
+
+  <!-- Footer -->
+  <rect x="40" y="690" width="520" height="70" rx="14" fill="#fef84c"/>
+  <text x="300" y="732" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="900" fill="#064e3b" text-anchor="middle">
+    STIKes Borneo Nusantara • @bem.atrocip
+  </text>
+</svg>

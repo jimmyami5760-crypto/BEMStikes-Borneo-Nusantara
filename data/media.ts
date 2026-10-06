@@ -1,0 +1,56 @@
+import { MediaItem } from "@/types";
+
+export const media: MediaItem[] = [
+  {
+    id: "media-1",
+    judul: "Poster Seminar Nasional Imaging Radiodiagnostik & Vaskular",
+    tipe: "poster",
+    file: "/images/media/poster-seminar.svg",
+    tanggal: "2026-02-01",
+    deskripsi: "Poster resmi publikasi agenda seminar ilmiah tahunan Prodi DIII Radiologi STIKes Borneo Nusantara.",
+    link: "https://instagram.com/bem.atrocip",
+  },
+  {
+    id: "media-2",
+    judul: "Infografis: 5 Fakta Keselamatan Radiasi Sinar-X yang Wajib Diketahui",
+    tipe: "infografis",
+    file: "/images/media/infografis-radiasi.svg",
+    tanggal: "2026-01-18",
+    deskripsi: "Edukasi visual mengenai dosis radiasi diagnostik, perbandingan dengan radiasi alam, dan kiat proteksi diri.",
+    link: "https://instagram.com/bem.atrocip",
+  },
+  {
+    id: "media-3",
+    judul: "Dokumentasi: Pelantikan & Serah Terima Jabatan Pengurus BEM",
+    tipe: "dokumentasi",
+    file: "/images/media/dokumentasi-pelantikan.svg",
+    tanggal: "2025-12-15",
+    deskripsi: "Momen khidmat pengucapan ikrar sumpah jabatan kepengurusan BEM periode 2025/2026 di Aula Utama STIKes.",
+  },
+  {
+    id: "media-4",
+    judul: "Infografis: Alur Pendaftaran PKL Rumah Sakit Mahasiswa Radiologi",
+    tipe: "infografis",
+    file: "/images/media/infografis-alur-pkl.svg",
+    tanggal: "2026-03-10",
+    deskripsi: "Panduan visual langkah demi langkah administrasi, pembagian kelompok, dan bimbingan lapangan PKL.",
+    link: "https://instagram.com/bem.atrocip",
+  },
+  {
+    id: "media-5",
+    judul: "Dokumentasi: Bakti Sosial Pemeriksaan Kesehatan Warga Pekapuran",
+    tipe: "dokumentasi",
+    file: "/images/media/dokumentasi-baksos.svg",
+    tanggal: "2026-01-12",
+    deskripsi: "Dokumentasi interaksi hangat mahasiswa BEM bersama para lansia dan warga masyarakat Banjarmasin.",
+  },
+  {
+    id: "media-6",
+    judul: "Poster Peringatan Hari Radiologi Sedunia (World Radiography Day)",
+    tipe: "poster",
+    file: "/images/media/poster-wrd.svg",
+    tanggal: "2025-11-08",
+    deskripsi: "Apresiasi dedikasi seluruh radiografer dan radiolog di penjuru Nusantara dalam menunjang diagnosa medis prima.",
+    link: "https://instagram.com/bem.atrocip",
+  },
+];

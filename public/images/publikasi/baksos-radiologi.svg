@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="baksosBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00d082"/>
+      <stop offset="70%" stop-color="#047857"/>
+      <stop offset="100%" stop-color="#064e3b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" rx="16" fill="url(#baksosBg)"/>
+
+  <!-- Hands / Care Heart Illustration -->
+  <g transform="translate(480, 110)">
+    <!-- Heart background -->
+    <path d="M 120,40 C 120,0 60,-10 0,60 C -60,-10 -120,0 -120,40 C -120,120 0,220 0,220 C 0,220 120,120 120,40 Z" fill="#fef84c" opacity="0.9"/>
+    <!-- Medical Stethoscope / Cross in Heart -->
+    <path d="M -15,50 L 15,50 L 15,20 L 35,20 L 35,50 L 65,50 L 65,70 L 35,70 L 35,100 L 15,100 L 15,70 L -15,70 Z" fill="#065f46"/>
+  </g>
+
+  <!-- Left Content Info -->
+  <g transform="translate(60, 90)">
+    <rect x="0" y="0" width="160" height="34" rx="17" fill="#ffffff"/>
+    <text x="80" y="22" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="900" fill="#047857" text-anchor="middle">PENGABDIAN SOSIAL</text>
+
+    <text x="0" y="90" font-family="'Segoe UI', Roboto, sans-serif" font-size="36" font-weight="900" fill="#ffffff">
+      Bakti Sosial Kesehatan
+    </text>
+    <text x="0" y="130" font-family="'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="700" fill="#fef84c">
+      Warga Pekapuran Banjarmasin
+    </text>
+
+    <text x="0" y="180" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="500" fill="#e2e8f0">
+      • Pemeriksaan Tensi Darah &amp; Gula Darah Gratis
+    </text>
+    <text x="0" y="210" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="500" fill="#e2e8f0">
+      • Sosialisasi Pencegahan Osteoporosis
+    </text>
+    <text x="0" y="240" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="500" fill="#e2e8f0">
+      • Pembagian Sembako Lansia Pra-Sejahtera
+    </text>
+  </g>
+
+  <!-- Banner footer -->
+  <rect x="50" y="390" width="700" height="60" rx="12" fill="#ffffff" opacity="0.95"/>
+  <text x="80" y="427" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800" fill="#064e3b">
+    Wujud Nyata Dedikasi Mahasiswa Radiologi STIKes Borneo Nusantara untuk Masyarakat
+  </text>
+</svg>

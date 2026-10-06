@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="alurGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#022c1e"/>
+      <stop offset="100%" stop-color="#00d082"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="800" rx="20" fill="url(#alurGrad)"/>
+
+  <rect x="40" y="40" width="520" height="100" rx="16" fill="#fef84c"/>
+  <text x="300" y="80" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="900" fill="#064e3b" text-anchor="middle" letter-spacing="1">
+    PANDUAN KLINIS MAHASISWA
+  </text>
+  <text x="300" y="115" font-family="'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="900" fill="#064e3b" text-anchor="middle">
+    Alur Praktik Kerja Lapangan (PKL)
+  </text>
+
+  <!-- Step 1 -->
+  <g transform="translate(40, 170)">
+    <rect width="520" height="110" rx="14" fill="#ffffff"/>
+    <rect x="20" y="25" width="50" height="50" rx="25" fill="#00d082"/>
+    <text x="45" y="58" font-family="'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="900" fill="#ffffff" text-anchor="middle">1</text>
+    <text x="90" y="45" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800" fill="#064e3b">Pemberkasan &amp; Vaksinasi</text>
+    <text x="90" y="70" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500" fill="#64748b">Pengumpulan surat sehat, sertifikat BHD, dan K3 Radiasi ke BEM.</text>
+  </g>
+
+  <!-- Step 2 -->
+  <g transform="translate(40, 310)">
+    <rect width="520" height="110" rx="14" fill="#ffffff"/>
+    <rect x="20" y="25" width="50" height="50" rx="25" fill="#00d082"/>
+    <text x="45" y="58" font-family="'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="900" fill="#ffffff" text-anchor="middle">2</text>
+    <text x="90" y="45" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800" fill="#064e3b">Pembekalan &amp; Orientasi RS</text>
+    <text x="90" y="70" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500" fill="#64748b">Pengarahan dosen pembimbing &amp; CI (Clinical Instructor) Rumah Sakit.</text>
+  </g>
+
+  <!-- Step 3 -->
+  <g transform="translate(40, 450)">
+    <rect width="520" height="110" rx="14" fill="#ffffff"/>
+    <rect x="20" y="25" width="50" height="50" rx="25" fill="#00d082"/>
+    <text x="45" y="58" font-family="'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="900" fill="#ffffff" text-anchor="middle">3</text>
+    <text x="90" y="45" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800" fill="#064e3b">Dinas Rotasi Modalitas</text>
+    <text x="90" y="70" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500" fill="#64748b">Praktik konvensional, fluoroskopi, CT-Scan, USG, dan proteksi TLD.</text>
+  </g>
+
+  <!-- Step 4 -->
+  <g transform="translate(40, 590)">
+    <rect width="520" height="110" rx="14" fill="#ffffff"/>
+    <rect x="20" y="25" width="50" height="50" rx="25" fill="#fef84c"/>
+    <text x="45" y="58" font-family="'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="900" fill="#064e3b" text-anchor="middle">4</text>
+    <text x="90" y="45" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800" fill="#064e3b">Ujian Kasus &amp; Logbook</text>
+    <text x="90" y="70" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500" fill="#64748b">Presentasi laporan studi kasus radiografi dan verifikasi logbook dinas.</text>
+  </g>
+
+  <text x="300" y="750" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle">
+    BEM STIKes Borneo Nusantara • Info &amp; Tanya Jawab: @bem.atrocip
+  </text>
+</svg>
