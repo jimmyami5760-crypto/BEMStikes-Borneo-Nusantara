@@ -47,7 +47,7 @@ export function Navbar() {
             >
               <div className="relative w-11 h-11 flex-shrink-0 bg-white p-1 rounded-xl shadow-sm border border-emerald-100 group-hover:scale-105 transition-transform">
                 <Image
-                  src="/logo/logo-bem.svg"
+                  src="/logo/Bem.PNG"
                   alt="Logo BEM STIKes Borneo Nusantara"
                   width={44}
                   height={44}

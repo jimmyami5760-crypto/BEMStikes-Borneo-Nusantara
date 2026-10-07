@@ -47,20 +47,24 @@ export function Hero() {
 
             <FadeIn delay={0.2}>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-[1.15]">
-                Wadah Sinergi &amp; Aspirasi{' '}
+                Halo,{' '}
                 <span className="relative inline-block text-[#064e3b]">
                   <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-[#00d082] to-[#047857]">
-                    Radiografer Muda
+                    Mahasiswa!
                   </span>
                   <span className="absolute -bottom-1.5 left-0 right-0 h-3 bg-[#fef84c] -z-0 rounded-sm opacity-80" />
                 </span>{' '}
-                Borneo Nusantara
+                  STIKes Borneo Nusantara
               </h1>
             </FadeIn>
 
             <FadeIn delay={0.3}>
               <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
-                Selamat datang di portal informasi resmi Badan Eksekutif Mahasiswa (BEM) STIKes Borneo Nusantara Program Studi DIII Radiologi. Pusat pengumuman akademik, jadwal kegiatan, dan publikasi ilmiah radiodiagnostik.
+                Selamat datang di ruang digital resmi BEM STIKes Borneo Nusantara Program Studi DIII Radiologi. Website ini kami rancang sebagai media informasi, inspirasi, dan kolaborasi, agar setiap mahasiswa bisa lebih mudah mengetahui kegiatan, layanan, dan peran BEM dalam kehidupan kampus.
+
+Dengan semangat kebersamaan, kreativitas, dan kepedulian, kami berkomitmen untuk menjadikan kampus lebih hidup, kritis, dan penuh karya. Mari bergabung, berpartisipasi, dan bersama-sama kita wujudkan kampus yang lebih baik!
+
+
               </p>
             </FadeIn>
 
@@ -113,7 +117,7 @@ export function Hero() {
                     <div className="flex items-center gap-3">
                       <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#00d082] to-[#065f46] p-2 flex items-center justify-center shadow-md">
                         <Image
-                          src="/logo/logo-bem.svg"
+                          src="/logo/Stikes.PNG"
                           alt="BEM Logo"
                           width={36}
                           height={36}
