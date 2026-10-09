@@ -42,7 +42,7 @@ export interface Publikasi {
 export interface MediaItem {
   id: string;
   judul: string;
-  tipe: 'poster' | 'infografis' | 'dokumentasi';
+  tipe: 'dokumentasi' | string;
   file: string;
   tanggal: string;
   deskripsi?: string;
@@ -67,8 +67,16 @@ export interface NilaiOrganisasi {
   iconName: string;
 }
 
+export interface SejarahBEM {
+  paragraf1: string;
+  paragraf2: string;
+  tahun: string;
+  pendiri: string;
+}
+
 export interface ProfileData {
   tentang: string;
+  sejarah?: SejarahBEM;
   visi: string;
   misi: string[];
   tujuan: string[];

@@ -1,21 +1,21 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import {
   ShieldCheck,
   Users,
   Sparkles,
   HeartHandshake,
-  CheckCircle,
-  Clock,
-  Calendar,
   Compass,
   Target,
   Award,
+  History,
+  Calendar,
+  GraduationCap,
 } from 'lucide-react';
 import { profileData } from '@/data/profile';
-import { Card, CardHeader, CardContent } from '@/components/ui/Card';
-import { Badge } from '@/components/ui/Badge';
+import { Card } from '@/components/ui/Card';
 import { FadeIn, StaggerContainer, StaggerItem } from '@/components/motion/MotionWrapper';
 
 const iconMap: Record<string, React.ReactNode> = {
@@ -33,11 +33,12 @@ export function ProfileSection({ showFull = true }: ProfileSectionProps) {
   return (
     <div className="space-y-16 py-8">
       {/* 1. Tentang BEM */}
-      <section>
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-          <div className="lg:col-span-12 space-y-4">
+      <section className="bg-white rounded-3xl p-6 sm:p-10 border border-emerald-100 shadow-sm relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-80 h-80 bg-gradient-to-bl from-emerald-100/40 via-yellow-100/20 to-transparent rounded-full blur-3xl pointer-events-none" />
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center relative z-10">
+          <div className="lg:col-span-8 space-y-4">
             <FadeIn>
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-xs font-bold text-[#064e3b]">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-xs font-bold text-[#064e3b]">
                 <Compass className="w-3.5 h-3.5 text-[#00d082]" />
                 TENTANG KAMI
               </div>
@@ -48,15 +49,97 @@ export function ProfileSection({ showFull = true }: ProfileSectionProps) {
                 </span>{' '}
                 – Prodi DIII Radiologi
               </h2>
-              <p className="text-slate-600 leading-relaxed text-base sm:text-lg pt-2 max-w-4xl">
+              <p className="text-slate-600 leading-relaxed text-base sm:text-lg pt-2">
                 {profileData.tentang}
               </p>
+            </FadeIn>
+          </div>
+
+          <div className="lg:col-span-4 flex justify-center">
+            <FadeIn direction="left">
+              <div className="relative group">
+                <div className="absolute -inset-1 rounded-3xl bg-gradient-to-r from-[#00d082] via-[#fef84c] to-[#00d082] opacity-40 blur-lg group-hover:opacity-70 transition duration-500" />
+                <div className="relative bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-emerald-100 flex flex-col items-center text-center">
+                  <div className="w-36 h-36 sm:w-44 sm:h-44 relative mb-4 p-2 bg-emerald-50/50 rounded-2xl flex items-center justify-center">
+                    <Image
+                      src="/logo/Bem.PNG"
+                      alt="Logo BEM STIKes Borneo Nusantara"
+                      width={176}
+                      height={176}
+                      className="w-full h-full object-contain"
+                      priority
+                    />
+                  </div>
+                  <span className="text-xs font-extrabold uppercase tracking-wider text-emerald-800 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
+                    Logo Resmi BEM
+                  </span>
+                  <p className="text-xs text-slate-500 mt-2 font-medium">
+                    Badan Eksekutif Mahasiswa
+                  </p>
+                </div>
+              </div>
             </FadeIn>
           </div>
         </div>
       </section>
 
-      {/* 2. Visi & Misi */}
+      {/* 2. Sejarah BEM */}
+      {profileData.sejarah && (
+        <section>
+          <FadeIn>
+            <div className="bg-gradient-to-br from-[#064e3b] via-[#043d2e] to-[#012519] rounded-3xl p-6 sm:p-10 text-white relative overflow-hidden shadow-xl border-t-4 border-[#00d082]">
+              <div className="absolute top-0 right-0 w-96 h-96 bg-[#00d082]/10 rounded-full blur-3xl pointer-events-none" />
+              <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#fef84c]/5 rounded-full blur-3xl pointer-events-none" />
+
+              <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div className="lg:col-span-8 space-y-4">
+                  <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 text-[#fef84c] border border-white/10 text-xs font-bold uppercase tracking-wider">
+                    <History className="w-3.5 h-3.5 text-[#fef84c]" />
+                    JEJAK SEJARAH
+                  </div>
+                  <h3 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+                    Sejarah BEM
+                  </h3>
+                  <p className="text-emerald-100/90 text-sm sm:text-base leading-relaxed">
+                    {profileData.sejarah.paragraf1}
+                  </p>
+                  <p className="text-emerald-100/90 text-sm sm:text-base leading-relaxed">
+                    {profileData.sejarah.paragraf2}
+                  </p>
+                </div>
+
+                <div className="lg:col-span-4">
+                  <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/15 space-y-5">
+                    <div className="flex items-center gap-3.5 pb-4 border-b border-white/10">
+                      <div className="w-12 h-12 rounded-xl bg-[#fef84c] text-emerald-950 flex items-center justify-center font-black shadow-md flex-shrink-0">
+                        <Calendar className="w-6 h-6 text-emerald-950" />
+                      </div>
+                      <div>
+                        <div className="text-xs text-emerald-300 font-semibold uppercase tracking-wider">Tahun Berdiri</div>
+                        <div className="text-2xl font-black text-[#fef84c]">{profileData.sejarah.tahun}</div>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start gap-3.5">
+                      <div className="w-12 h-12 rounded-xl bg-[#00d082] text-white flex items-center justify-center font-bold flex-shrink-0 mt-0.5 shadow-md">
+                        <GraduationCap className="w-6 h-6 text-white" />
+                      </div>
+                      <div>
+                        <div className="text-xs text-emerald-300 font-semibold uppercase tracking-wider">Didirikan Oleh</div>
+                        <div className="text-sm font-bold text-white leading-snug mt-0.5">
+                          {profileData.sejarah.pendiri}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </FadeIn>
+        </section>
+      )}
+
+      {/* 3. Visi & Misi */}
       <section className="grid grid-cols-1 lg:grid-cols-12 gap-8">
         {/* Visi (5 cols) */}
         <div className="lg:col-span-5">
@@ -72,8 +155,14 @@ export function ProfileSection({ showFull = true }: ProfileSectionProps) {
               </p>
 
               <div className="mt-8 pt-6 border-t border-white/10 flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-[#fef84c] text-emerald-950 flex items-center justify-center font-black text-sm">
-                  BN
+                <div className="w-11 h-11 rounded-xl bg-white p-1.5 flex items-center justify-center flex-shrink-0 shadow-md">
+                  <Image
+                    src="/logo/Bem.PNG"
+                    alt="Logo BEM STIKes Borneo Nusantara"
+                    width={36}
+                    height={36}
+                    className="w-full h-full object-contain"
+                  />
                 </div>
                 <div>
                   <div className="text-sm font-bold text-white">BEM STIKes Borneo Nusantara</div>
@@ -93,7 +182,7 @@ export function ProfileSection({ showFull = true }: ProfileSectionProps) {
                 MISI UTAMA
               </div>
               <div className="space-y-4">
-                {profileData.misi.map((m, index) => (
+                {(profileData.misi || []).map((m, index) => (
                   <div key={index} className="flex items-start gap-4">
                     <span className="flex-shrink-0 w-7 h-7 rounded-xl bg-[#00d082] text-white flex items-center justify-center font-black text-xs shadow-sm mt-0.5">
                       {index + 1}
@@ -109,7 +198,7 @@ export function ProfileSection({ showFull = true }: ProfileSectionProps) {
         </div>
       </section>
 
-      {/* 3. Nilai-Nilai Organisasi */}
+      {/* 4. Nilai-Nilai Organisasi */}
       <section>
         <div className="text-center max-w-2xl mx-auto mb-10">
           <FadeIn>
@@ -126,7 +215,7 @@ export function ProfileSection({ showFull = true }: ProfileSectionProps) {
         </div>
 
         <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {profileData.nilaiOrganisasi.map((item, idx) => (
+          {(profileData.nilaiOrganisasi || []).map((item, idx) => (
             <StaggerItem key={idx}>
               <Card hoverEffect accentBorder className="h-full p-6 space-y-3">
                 <div className="w-12 h-12 rounded-2xl bg-emerald-50 border border-emerald-100 flex items-center justify-center">
@@ -141,80 +230,6 @@ export function ProfileSection({ showFull = true }: ProfileSectionProps) {
           ))}
         </StaggerContainer>
       </section>
-
-      {/* 4. Program Kerja Strategis */}
-      {showFull && (
-        <section className="pt-4">
-          <div className="text-center max-w-2xl mx-auto mb-10">
-            <FadeIn>
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 text-[#064e3b] border border-emerald-200 text-xs font-bold uppercase tracking-wider">
-                RENCANA KERJA
-              </div>
-              <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-2">
-                Program Kerja Unggulan Per Divisi
-              </h3>
-              <p className="text-sm text-slate-600 mt-2">
-                Aksi nyata kepengurusan dalam bidang keilmuan radiologi, minat bakat, dan sosial kemasyarakatan.
-              </p>
-            </FadeIn>
-          </div>
-
-          <div className="space-y-8">
-            {profileData.programKerja.map((divisiGroup, idx) => (
-              <FadeIn key={idx} delay={idx * 0.1}>
-                <div className="bg-white rounded-3xl border border-emerald-100 shadow-sm p-6 sm:p-8">
-                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-6 border-b border-slate-100">
-                    <div className="flex items-center gap-3">
-                      <span className="w-3 h-8 bg-[#00d082] rounded-full" />
-                      <h4 className="text-lg sm:text-xl font-bold text-[#064e3b]">
-                        {divisiGroup.divisi}
-                      </h4>
-                    </div>
-                    <Badge variant="soft" size="sm">
-                      {divisiGroup.program.length} Program Kerja
-                    </Badge>
-                  </div>
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-                    {divisiGroup.program.map((prog, pIdx) => {
-                      const isDone = prog.status === 'Terlaksana';
-                      const isOngoing = prog.status === 'Sedang Berjalan';
-                      return (
-                        <div
-                          key={pIdx}
-                          className="p-5 rounded-2xl bg-slate-50/70 border border-slate-100 hover:border-emerald-200 transition-all space-y-3"
-                        >
-                          <div className="flex items-center justify-between gap-2">
-                            <h5 className="font-bold text-sm sm:text-base text-slate-900">
-                              {prog.nama}
-                            </h5>
-                            <Badge
-                              variant={isDone ? 'primary' : isOngoing ? 'yellow' : 'white'}
-                              size="sm"
-                              className="flex-shrink-0"
-                            >
-                              {isDone && <CheckCircle className="w-3 h-3 mr-1" />}
-                              {isOngoing && <Clock className="w-3 h-3 mr-1" />}
-                              {prog.status}
-                            </Badge>
-                          </div>
-                          <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                            {prog.deskripsi}
-                          </p>
-                          <div className="pt-2 flex items-center gap-2 text-xs text-slate-500 font-medium">
-                            <Calendar className="w-3.5 h-3.5 text-[#00d082]" />
-                            <span>Target: <strong className="text-slate-700">{prog.target}</strong></span>
-                          </div>
-                        </div>
-                      );
-                    })}
-                  </div>
-                </div>
-              </FadeIn>
-            ))}
-          </div>
-        </section>
-      )}
     </div>
   );
 }

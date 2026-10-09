@@ -21,7 +21,7 @@ export function Footer() {
             <div className="flex items-center gap-4">
               <div className="w-14 h-14 bg-white rounded-2xl p-1.5 shadow-md flex items-center justify-center">
                 <Image
-                  src="/logo/logo-bem.svg"
+                  src="/logo/Bem.PNG"
                   alt="Logo BEM"
                   width={48}
                   height={48}
@@ -30,7 +30,7 @@ export function Footer() {
               </div>
               <div className="w-14 h-14 bg-white rounded-2xl p-1.5 shadow-md flex items-center justify-center">
                 <Image
-                  src="/logo/logo-stikes.svg"
+                  src="/logo/Stikes.PNG"
                   alt="Logo STIKes"
                   width={48}
                   height={48}
@@ -108,13 +108,29 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-[#00d082] flex-shrink-0" />
-                <span>{siteConfig.telepon}</span>
+                <a
+                  href={`tel:${siteConfig.telepon.replace(/\s+/g, '')}`}
+                  className="hover:text-white transition-colors"
+                >
+                  {siteConfig.telepon}
+                </a>
+              </div>
+              <div className="flex items-center gap-3">
+                <Instagram className="w-5 h-5 text-[#00d082] flex-shrink-0" />
+                <a
+                  href={siteConfig.instagramUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors underline-offset-4 hover:underline"
+                >
+                  Instagram {siteConfig.instagram}
+                </a>
               </div>
             </div>
 
             <div className="pt-2">
               <div className="inline-block bg-[#0f3525] border border-emerald-700/50 rounded-xl px-3.5 py-2 text-xs text-emerald-200">
-                <span className="text-[#fef84c] font-bold">Prodi DIII Radiologi:</span> Unggul dalam Teknik Radiografi, CT-Scan &amp; Proteksi Radiasi.
+                <span className="text-[#fef84c] font-bold">Prodi DIII Radiologi:</span> Teknik Radiografi, Proteksi Radiasi.
               </div>
             </div>
           </div>
@@ -126,9 +142,9 @@ export function Footer() {
             Hak cipta © {currentYear} <span className="text-white font-semibold">BEM STIKes Borneo Nusantara – Prodi DIII Radiologi</span>. Seluruh hak cipta dilindungi.
           </p>
           <div className="flex items-center gap-1.5 text-emerald-300">
-            <span>Didedikasikan dengan</span>
+            <span>Didedikasikan dengan hati</span>
             <Heart className="w-3.5 h-3.5 text-[#fef84c] fill-[#fef84c]" />
-            <span>untuk Mahasiswa &amp; Almamater</span>
+            <span>untuk Mahasiswa</span>
           </div>
         </div>
       </div>

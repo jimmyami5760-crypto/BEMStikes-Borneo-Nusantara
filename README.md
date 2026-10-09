@@ -1,6 +1,6 @@
 # Website BEM STIKes Borneo Nusantara – Prodi DIII Radiologi
 
-Website resmi **Badan Eksekutif Mahasiswa (BEM)** Program Studi DIII Radiologi, STIKes Borneo Nusantara. Website ini berfungsi sebagai **papan informasi (board information)** untuk mahasiswa dan masyarakat kampus.
+Website resmi **Badan Eksekutif Mahasiswa (BEM)** Program Studi DIII Radiologi dari Angkatan 17, STIKes Borneo Nusantara. Website ini berfungsi sebagai **papan informasi (board information)** untuk mahasiswa dan masyarakat kampus.
 
 ## Ketentuan Utama
 
@@ -43,8 +43,8 @@ bem-website/
 ├── tsconfig.json
 ├── public/
 │   ├── logo/
-│   │   ├── logo-bem.png
-│   │   └── logo-stikes.png
+│   │   ├── Bem.NPG
+│   │   └── Stikes.NPG
 │   ├── images/
 │   │   ├── struktur/          # foto pengurus
 │   │   ├── publikasi/         # gambar publikasi
@@ -155,6 +155,7 @@ Buka `http://localhost:3000`.
 
 - Instagram: [@bem.atrocip](https://instagram.com/bem.atrocip)
 - Alamat: Jl. Pekapuran B Laut, Banjarmasin, Kalimantan Selatan
+- Email: bematrocitraintanpersada@gmail.com
 
 ## Lisensi
 

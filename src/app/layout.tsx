@@ -23,9 +23,9 @@ export const metadata: Metadata = {
   authors: [{ name: 'BEM STIKes Borneo Nusantara' }],
   creator: 'BEM STIKes Borneo Nusantara',
   icons: {
-    icon: '/icon.svg',
-    shortcut: '/icon.svg',
-    apple: '/icon.svg',
+    icon: [{ url: '/icon.png', type: 'image/png', sizes: '256x256' }],
+    shortcut: '/icon.png',
+    apple: [{ url: '/apple-icon.png', type: 'image/png', sizes: '180x180' }],
   },
   openGraph: {
     type: 'website',

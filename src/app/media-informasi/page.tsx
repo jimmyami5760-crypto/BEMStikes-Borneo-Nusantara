@@ -6,9 +6,9 @@ import { siteConfig } from '@/data/site';
 import { Instagram, ExternalLink } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Media Informasi & Galeri',
+  title: 'Dokumentasi Foto & Galeri Kegiatan',
   description:
-    'Pusat poster kegiatan, infografis keselamatan radiasi, dan dokumentasi kegiatan BEM STIKes Borneo Nusantara.',
+    'Galeri dokumentasi foto resmi kegiatan mahasiswa, PKKMB lintas angkatan, Praktik Kerja Lapangan (PKL) rumah sakit, bakti sosial, dan agenda ormawa BEM STIKes Borneo Nusantara.',
 };
 
 export default function MediaInformasiPage() {
@@ -18,13 +18,13 @@ export default function MediaInformasiPage() {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-10">
           <Badge variant="yellow" size="md" className="mb-3">
-            GALERI &amp; KONTEN VISUAL
+            DOKUMENTASI FOTO &amp; KEGIATAN
           </Badge>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight">
-            Media Informasi BEM Radiologi
+            Dokumentasi Foto BEM Radiologi
           </h1>
           <p className="text-sm sm:text-base text-slate-600 mt-3 leading-relaxed">
-            Kumpulan poster publikasi agenda, infografis edukasi keselamatan radiasi sinar-X, dan arsip dokumentasi resmi kegiatan ormawa.
+            Arsip foto dokumentasi resmi perjalanan civitas akademika DIII Radiologi STIKes Borneo Nusantara, mulai dari PKKMB lintas angkatan, Praktik Kerja Lapangan (PKL) rumah sakit, bakti sosial, hingga peringatan hari besar keagamaan.
           </p>
 
           <div className="mt-5 flex items-center justify-center">

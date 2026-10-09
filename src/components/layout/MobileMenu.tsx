@@ -33,8 +33,8 @@ export function MobileMenu({ isOpen, onClose, navItems, currentPath }: MobileMen
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 bg-white rounded-xl p-1 shadow-sm border border-emerald-100 flex items-center justify-center">
               <Image
-                src="/logo/logo-bem.svg"
-                alt="Logo BEM"
+                src="/logo/Bem.PNG"
+                alt="Logo BEM STIKes Borneo Nusantara"
                 width={36}
                 height={36}
                 className="w-full h-full object-contain"
@@ -68,17 +68,17 @@ export function MobileMenu({ isOpen, onClose, navItems, currentPath }: MobileMen
                 href={item.href}
                 onClick={onClose}
                 className={cn(
-                  'flex items-center justify-between px-4 py-3 rounded-xl text-sm font-semibold transition-all',
+                  'flex items-center justify-between px-4 py-3 rounded-xl text-sm font-semibold transition-all duration-200 group',
                   isActive
-                    ? 'bg-[#00d082] text-white shadow-sm shadow-[#00d082]/30'
-                    : 'text-slate-700 hover:bg-slate-100'
+                    ? 'bg-gradient-to-r from-[#00d082] to-[#00b370] text-white shadow-md shadow-[#00d082]/25 font-bold translate-x-1'
+                    : 'text-slate-700 hover:bg-emerald-50 hover:text-[#064e3b] hover:translate-x-1.5'
                 )}
               >
                 <span>{item.label}</span>
                 {isActive ? (
                   <span className="w-2 h-2 rounded-full bg-[#fef84c]" />
                 ) : (
-                  <ArrowRight className="w-4 h-4 text-slate-400" />
+                  <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-[#00d082] group-hover:translate-x-0.5 transition-all" />
                 )}
               </Link>
             );

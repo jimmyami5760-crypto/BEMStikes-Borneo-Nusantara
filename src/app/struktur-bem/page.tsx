@@ -23,7 +23,7 @@ export default function StrukturBemPage() {
             Struktur Kepengurusan BEM DIII Radiologi
           </h1>
           <p className="text-sm sm:text-base text-slate-600 mt-3 leading-relaxed">
-            Periode Kepengurusan Aktif 2025/2026 • Bersatu dalam visi membangun sinergi dan integritas mahasiswa radiologi STIKes Borneo Nusantara.
+            Periode Kepengurusan Aktif 2025/2026 • Bersatu dalam visi membangun sinergi dan integritas mahasiswa radiologi STIKes Borneo Nusantara Angkatan 17.
           </p>
         </div>
 

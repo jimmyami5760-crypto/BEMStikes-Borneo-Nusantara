@@ -37,7 +37,7 @@ export function Hero() {
                   <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#00d082]"></span>
                 </span>
                 <span className="text-xs font-bold text-[#064e3b] tracking-wide uppercase">
-                  Papan Informasi Resmi BEM
+                  Sambutan Mahasiswa
                 </span>
                 <span className="text-[10px] bg-[#fef84c] text-emerald-950 font-extrabold px-2 py-0.5 rounded-full">
                   DIII Radiologi
@@ -73,11 +73,11 @@ Dengan semangat kebersamaan, kreativitas, dan kepedulian, kami berkomitmen untuk
               <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2.5 pt-1">
                 <Badge variant="soft" size="md" className="gap-1.5">
                   <ShieldCheck className="w-4 h-4 text-[#00d082]" />
-                  Budaya ALARA &amp; Keselamatan
+                  Program Kerja &amp; Informasi 
                 </Badge>
                 <Badge variant="yellow" size="md" className="gap-1.5">
                   <Sparkles className="w-4 h-4 text-emerald-950" />
-                  Klinis &amp; Penalaran Ilmiah
+                  Membidik Ilmu &amp; Berkembang Bersama
                 </Badge>
                 <Badge variant="white" size="md" className="gap-1.5">
                   <CheckCircle2 className="w-4 h-4 text-[#00d082]" />
@@ -134,7 +134,7 @@ Dengan semangat kebersamaan, kreativitas, dan kepedulian, kami berkomitmen untuk
                       </div>
                     </div>
                     <span className="px-2.5 py-1 rounded-full bg-[#fef84c] text-emerald-950 font-black text-xs">
-                      2025/2026
+                      2026
                     </span>
                   </div>
 
@@ -162,12 +162,12 @@ Dengan semangat kebersamaan, kreativitas, dan kepedulian, kami berkomitmen untuk
                     <div className="flex items-center justify-between text-xs">
                       <span className="flex items-center gap-1.5 text-[#fef84c] font-bold">
                         <Bell className="w-3.5 h-3.5" />
-                        PEMBERITAHUAN TERKINI
+                        AGENDA TERBARU
                       </span>
-                      <span className="text-[10px] text-emerald-300 font-medium">Semester Genap</span>
+                      <span className="text-[10px] text-emerald-300 font-medium">Semester Ganjil</span>
                     </div>
                     <p className="text-xs font-semibold text-emerald-50 line-clamp-2">
-                      Praktik Kerja Lapangan (PKL) Rumah Sakit Jejaring Kalimantan Selatan segera dimulai.
+                      Pelaksanaan PKKMB Tahun Akademik 2026/2027 
                     </p>
                     <Link
                       href="/publikasi/jadwal-praktikum-lapangan-radiologi-genap-2026"

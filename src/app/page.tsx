@@ -47,7 +47,7 @@ export default function HomePage() {
               </p>
               <div className="pt-2 flex flex-wrap gap-3">
                 <Button href="/profile" variant="primary" size="md">
-                  <span>Profil Lengkap &amp; Program Kerja</span>
+                  <span>Profil Lengkap Organisasi</span>
                   <ArrowRight className="w-4 h-4" />
                 </Button>
                 <Button href="/struktur-bem" variant="outline" size="md">
@@ -88,17 +88,17 @@ export default function HomePage() {
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
           <div>
             <Badge variant="yellow" size="sm" className="mb-2">
-              DOKUMENTASI &amp; DESAIN
+              DOKUMENTASI FOTO
             </Badge>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-[#064e3b]">
-              Cuplikan Media Informasi
+              Cuplikan Dokumentasi Kegiatan
             </h2>
             <p className="text-sm text-slate-600 mt-1">
-              Poster kegiatan, infografis edukasi proteksi radiasi, dan rekaman momentum ormawa.
+              Dokumentasi foto resmi PKKMB, Praktik Kerja Lapangan (PKL), bakti sosial, dan agenda kemahasiswaan.
             </p>
           </div>
           <Button href="/media-informasi" variant="outline" size="md">
-            <span>Lihat Galeri Lengkap</span>
+            <span>Lihat Semua Dokumentasi</span>
             <ArrowRight className="w-4 h-4" />
           </Button>
         </div>
