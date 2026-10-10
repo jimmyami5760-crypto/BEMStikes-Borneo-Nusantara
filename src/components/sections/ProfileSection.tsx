@@ -60,21 +60,33 @@ export function ProfileSection({ showFull = true }: ProfileSectionProps) {
               <div className="relative group">
                 <div className="absolute -inset-1 rounded-3xl bg-gradient-to-r from-[#00d082] via-[#fef84c] to-[#00d082] opacity-40 blur-lg group-hover:opacity-70 transition duration-500" />
                 <div className="relative bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-emerald-100 flex flex-col items-center text-center">
-                  <div className="w-36 h-36 sm:w-44 sm:h-44 relative mb-4 p-2 bg-emerald-50/50 rounded-2xl flex items-center justify-center">
-                    <Image
-                      src="/logo/Bem.PNG"
-                      alt="Logo BEM STIKes Borneo Nusantara"
-                      width={176}
-                      height={176}
-                      className="w-full h-full object-contain"
-                      priority
-                    />
+                  <div className="flex items-center justify-center gap-3 sm:gap-4 mb-4">
+                    <div className="w-20 h-20 sm:w-24 sm:h-24 relative p-2 bg-emerald-50/50 rounded-2xl flex items-center justify-center border border-emerald-100/60 shadow-sm">
+                      <Image
+                        src="/logo/Bem.PNG"
+                        alt="Logo BEM STIKes Borneo Nusantara"
+                        width={96}
+                        height={96}
+                        className="w-full h-full object-contain"
+                        priority
+                      />
+                    </div>
+                    <div className="w-20 h-20 sm:w-24 sm:h-24 relative p-2 bg-emerald-50/50 rounded-2xl flex items-center justify-center border border-emerald-100/60 shadow-sm">
+                      <Image
+                        src="/logo/Stikes.PNG"
+                        alt="Logo STIKes Borneo Nusantara"
+                        width={96}
+                        height={96}
+                        className="w-full h-full object-contain"
+                        priority
+                      />
+                    </div>
                   </div>
                   <span className="text-xs font-extrabold uppercase tracking-wider text-emerald-800 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
-                    Logo Resmi BEM
+                    Logo Resmi BEM &amp; Kampus
                   </span>
                   <p className="text-xs text-slate-500 mt-2 font-medium">
-                    Badan Eksekutif Mahasiswa
+                    STIKes Borneo Nusantara
                   </p>
                 </div>
               </div>

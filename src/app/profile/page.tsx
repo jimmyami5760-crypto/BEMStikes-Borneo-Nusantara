@@ -17,14 +17,26 @@ export default function ProfilePage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Page Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="w-20 h-20 sm:w-24 sm:h-24 mx-auto mb-5 relative drop-shadow-md">
-            <SmartImage
-              src="/logo/Bem.PNG"
-              alt="Logo BEM STIKes Borneo Nusantara"
-              fill
-              className="object-contain"
-              priority
-            />
+          {/* Logo BEM & STIKes di atas */}
+          <div className="flex items-center justify-center gap-4 sm:gap-6 mb-6">
+            <div className="w-20 h-20 sm:w-24 sm:h-24 relative p-2 bg-white rounded-2xl shadow-sm border border-emerald-100 hover:scale-105 transition-transform">
+              <SmartImage
+                src="/logo/Bem.PNG"
+                alt="Logo BEM STIKes Borneo Nusantara"
+                fill
+                className="object-contain p-1"
+                priority
+              />
+            </div>
+            <div className="w-20 h-20 sm:w-24 sm:h-24 relative p-2 bg-white rounded-2xl shadow-sm border border-emerald-100 hover:scale-105 transition-transform">
+              <SmartImage
+                src="/logo/Stikes.PNG"
+                alt="Logo STIKes Borneo Nusantara"
+                fill
+                className="object-contain p-1"
+                priority
+              />
+            </div>
           </div>
           <Badge variant="yellow" size="md" className="mb-3">
             PROFIL BEM STIKes Borneo Nusantara DIII RADIOLOGI
