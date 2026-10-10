@@ -112,8 +112,23 @@ export function Navbar() {
               })}
             </nav>
 
-            {/* Right Action / Social Button */}
+            {/* Right Action / Social Button & Campus Logo */}
             <div className="hidden lg:flex items-center gap-3">
+              {/* Logo STIKes di sebelah kanan menu Kontak */}
+              <div
+                className="relative w-10 h-10 flex-shrink-0 bg-white p-1 rounded-xl shadow-sm border border-emerald-100 hover:scale-110 hover:shadow-md hover:border-[#00d082] group transition-all duration-300"
+                title="STIKes Borneo Nusantara"
+              >
+                <Image
+                  src="/logo/Stikes.PNG"
+                  alt="Logo STIKes Borneo Nusantara"
+                  width={40}
+                  height={40}
+                  className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
+                  priority
+                />
+              </div>
+
               <a
                 href={siteConfig.instagramUrl}
                 target="_blank"
@@ -128,15 +143,26 @@ export function Navbar() {
               </a>
             </div>
 
-            {/* Mobile Hamburger Toggle Button */}
-            <button
-              type="button"
-              onClick={() => setIsOpen(!isOpen)}
-              className="lg:hidden p-2.5 rounded-xl text-slate-700 hover:text-[#064e3b] hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-[#00d082] transition-colors"
-              aria-label={isOpen ? 'Tutup menu navigasi' : 'Buka menu navigasi'}
-            >
-              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </button>
+            {/* Mobile Actions: Logo STIKes & Hamburger Toggle */}
+            <div className="flex items-center gap-2.5 lg:hidden">
+              <div className="relative w-9 h-9 flex-shrink-0 bg-white p-1 rounded-xl shadow-sm border border-emerald-100">
+                <Image
+                  src="/logo/Stikes.PNG"
+                  alt="Logo STIKes Borneo Nusantara"
+                  width={36}
+                  height={36}
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <button
+                type="button"
+                onClick={() => setIsOpen(!isOpen)}
+                className="p-2.5 rounded-xl text-slate-700 hover:text-[#064e3b] hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-[#00d082] transition-colors"
+                aria-label={isOpen ? 'Tutup menu navigasi' : 'Buka menu navigasi'}
+              >
+                {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              </button>
+            </div>
           </div>
         </div>
       </header>

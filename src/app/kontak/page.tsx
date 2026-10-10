@@ -2,6 +2,7 @@ import React from 'react';
 import type { Metadata } from 'next';
 import { ContactInfo } from '@/components/sections/ContactInfo';
 import { Badge } from '@/components/ui/Badge';
+import { SmartImage } from '@/components/ui/SmartImage';
 
 export const metadata: Metadata = {
   title: 'Kontak & Sekretariat',
@@ -15,6 +16,27 @@ export default function KontakPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
+          {/* Logo BEM & STIKes di atas Kontak */}
+          <div className="flex items-center justify-center gap-4 sm:gap-6 mb-6">
+            <div className="w-16 h-16 sm:w-20 sm:h-20 relative p-2 bg-white rounded-2xl shadow-sm border border-emerald-100 hover:scale-105 transition-transform">
+              <SmartImage
+                src="/logo/Bem.PNG"
+                alt="Logo BEM STIKes Borneo Nusantara"
+                fill
+                className="object-contain p-1"
+                priority
+              />
+            </div>
+            <div className="w-16 h-16 sm:w-20 sm:h-20 relative p-2 bg-white rounded-2xl shadow-sm border border-emerald-100 hover:scale-105 transition-transform">
+              <SmartImage
+                src="/logo/Stikes.PNG"
+                alt="Logo STIKes Borneo Nusantara"
+                fill
+                className="object-contain p-1"
+                priority
+              />
+            </div>
+          </div>
           <Badge variant="yellow" size="md" className="mb-3">
             SEKRETARIAT &amp; LAYANAN INFORMASI
           </Badge>
